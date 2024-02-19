@@ -1,0 +1,144 @@
+@import "../../assets/mixins";
+
+.navbar {
+  
+  @include d-flex(space-between);
+
+  color: var(--text);
+  .left,
+  .center,
+  .right {
+    @include d-flex($g: 20px);
+    width: 100%;
+  }
+  .left {
+    justify-content: start;
+  }
+  .logo2 {
+    @media (max-width: 990px) {
+      display: none;
+    }
+  }
+  .center {
+    gap: 40px;
+    font-size: 14px;
+    p {
+      cursor: pointer;
+      transition: 0.2s linear;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    @media (max-width: 690px) {
+      display: none;
+    }
+  }
+  .right {
+    position: relative;
+    justify-content: flex-end;
+    @media (max-width: 690px) {
+      gap: 10px;
+    }
+  }
+
+  .dropDown {
+    width: max-content;
+    position: relative;
+    .header {
+      cursor: pointer;
+      padding: 10px;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      div {
+        width: 20px;
+      }
+    }
+
+    .menu {
+      left: 0;
+      box-shadow: 0px 5px 5px #0001;
+      opacity: 0;
+      height: 0;
+      transition: 0.2s linear;
+      position: absolute;
+      top: 100%;
+      background-color: white;
+      width: max-content !important;
+      border: 2px solid var(--primary);
+      border-radius: 10px;
+      background-color: var(--primary);
+      right: 0;
+      @include d-flex($f-d: column, $g: 2px);
+      overflow: hidden;
+      p {
+        transition: 0.2s linear;
+        cursor: pointer;
+        padding: 5px 20px;
+        background-color: white;
+        width: 100%;
+        &:hover {
+          background-color: var(--primary-light);
+        }
+      }
+    }
+    &:hover .menu {
+      opacity: 1;
+      height: auto;
+    }
+  }
+  .hamIcon {
+    display: none;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 10px;
+    @media (max-width: 690px) {
+      display: inline;
+    }
+  }
+  .hamModal {
+    transition: 0.5s linear;
+    top: 0;
+    left: 0;
+    background-color: #0006;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    @include d-flex(flex-end);
+  }
+  .hamModalClose {
+    left: 100%;
+  }
+  .container {
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--primary);
+    @include d-flex(space-between, flex-end, column);
+  }
+  .x {
+    padding: 10px;
+    background-color: var(--white);
+    width: max-content;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    color: var(--primary);
+    @include d-flex;
+    div {
+      width: 70%;
+    }
+  }
+  .body {
+    color: var(--white);
+    font-size: 30px;
+    text-align: end;
+    @include d-flex($a-i: flex-end, $f-d: column, $g: 20px);
+  }
+  .footer {
+    width: 100%;
+    @include d-flex($g: 20px);
+  }
+}
