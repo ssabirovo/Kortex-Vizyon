@@ -1,10 +1,12 @@
 @import "../../assets/mixins";
 
 .navbar {
-  
   @include d-flex(space-between);
-
+  position: sticky;
+  top: 0;
+  z-index: 1;
   color: var(--text);
+  background-color: var(--white);
   .left,
   .center,
   .right {
@@ -99,7 +101,8 @@
     }
   }
   .hamModal {
-    transition: 0.5s linear;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
     top: 0;
     left: 0;
     background-color: #0006;

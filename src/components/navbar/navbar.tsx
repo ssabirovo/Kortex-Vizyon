@@ -1,11 +1,11 @@
 import { useState } from "react";
 import cx from "classnames";
 import Icon from "../../assets/icons/icon";
-import cls from "./navbar.module.scss";
 import { Langs } from "./inside";
+import cls from "./navbar.module.scss";
 
 function Navbar() {
-  const [closed, setClosed] = useState(false);
+  const [closed, setClosed] = useState(true);
   const [activeLang, setActiveLang] = useState("EN");
 
   const changeLang = (lang: string) => {

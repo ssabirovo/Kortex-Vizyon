@@ -1,0 +1,146 @@
+@import "../../assets/mixins";
+
+.hero {
+  position: relative;
+  @include d-flex(space-between);
+  min-height: 90vh;
+
+  @media (max-width: 940px) {
+    flex-direction: column-reverse;
+    gap: 50px;
+    justify-content: center;
+  }
+  .left,
+  .right {
+    width: 50%;
+    @media (max-width: 940px) {
+      width: 100%;
+    }
+  }
+  .left {
+    @include d-flex($a-i: start, $f-d: column, $g: 30px);
+    img {
+      width: 100%;
+    }
+    p {
+      color: var(--text-light);
+      font-size: 18px;
+    }
+    button {
+      padding: 10px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--primary);
+      color: var(--white);
+      transition: 0.2s linear;
+      cursor: pointer;
+      &:hover {
+        background-color: #9cdb0a;
+      }
+      &:active {
+        background-color: #b3d562;
+      }
+    }
+  }
+  .center {
+    @media (max-width: 940px) {
+      width: 70px;
+    }
+    @media (max-width: 440px) {
+      width: 50px;
+    }
+  }
+  .right {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    @include d-flex;
+
+    div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media (max-width: 940px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .shirt {
+      background-image: url("/src/assets/images/t-shirt.png");
+      top: 0;
+    }
+    .yarn {
+      background-image: url("/src/assets/images/yarn.png");
+      left: 0;
+      bottom: 0px;
+    }
+    .cotton {
+      background-image: url("/src/assets/images/cotton.png");
+      right: 0;
+      bottom: 0px;
+    }
+    .active {
+      background-color: transparent;
+      border: 3px solid var(--primary);
+      transition: 0.3s linear;
+      animation-name: activeAnimation;
+      animation-duration: 10s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    @media (max-width: 940px) {
+      height: 300px;
+      width: 300px;
+    }
+    @media (max-width: 440px) {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}
+@keyframes activeAnimation {
+  0% {
+  }
+  30% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+  }
+  60% {
+    left: 0;
+    transform: translate(0, -100%);
+    top: 100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.why {
+  padding-top: 100px;
+  @include d-flex(start);
+  .title {
+    @include d-flex($a-i: start, $f-d: column, $g: 10px);
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    div {
+      padding: 2px;
+      background-color: var(--primary);
+      width: 100px;
+    }
+    p {
+      color: var(--text-light);
+    }
+  }
+}

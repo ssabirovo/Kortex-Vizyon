@@ -1,0 +1,81 @@
+@import "../../../../assets/mixins";
+
+.product {
+  @include d-flex(space-between, $g: 100px);
+
+  @media (max-width: 690px) {
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .left {
+    width: 45%;
+    filter: drop-shadow(0 10px 10px #0002);
+    @media (max-width: 690px) {
+      width: 95%;
+    }
+  }
+  .right {
+    width: 100%;
+    @include d-flex($a-i: start, $f-d: column, $g: 30px);
+    .title {
+      @include d-flex($a-i: start, $f-d: column, $g: 10px);
+      h1 {
+        font-size: 32px;
+        color: var(--text);
+      }
+      div {
+        width: 100px;
+        padding: 2px;
+        background-color: var(--primary);
+      }
+    }
+    h3 {
+      color: var(--text);
+      font-size: 20px;
+    }
+    p {
+      color: var(--text-light);
+      letter-spacing: 1.5px;
+    }
+    .colors {
+      display: flex;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      gap: 15px;
+      div {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border-radius: 40px;
+        border: 4px solid var(--white);
+        transition: 0.2s ease-in-out;
+        &:hover {
+          transform: scale(0.7);
+        }
+      }
+      .activeColor {
+        outline: 3px solid var(--primary);
+        transform: none !important;
+      }
+    }
+
+    button {
+      background-color: var(--primary);
+      width: 100%;
+      padding: 10px;
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      transition: 0.2s linear;
+      cursor: pointer;
+      &:hover {
+        background-color: #9cdb0a;
+      }
+      &:active {
+        background-color: #b3d562;
+      }
+    }
+  }
+}
