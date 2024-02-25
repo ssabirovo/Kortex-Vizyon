@@ -4,7 +4,6 @@
   position: relative;
   @include d-flex(space-between);
   min-height: 90vh;
-
   @media (max-width: 940px) {
     flex-direction: column-reverse;
     gap: 50px;

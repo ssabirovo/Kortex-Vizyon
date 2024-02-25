@@ -1,38 +1,108 @@
 @import "../../../../assets/mixins";
+.header {
+  padding-top: 40px;
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
 
+    @media (max-width: 500px) {
+      font-size: 24px;
+    }
+  }
+  div {
+    padding: 2px;
+    background-color: var(--primary);
+    width: 100px;
+    margin: 10px 0;
+  }
+}
 .product {
   @include d-flex(space-between, $g: 100px);
-
+  padding-top: 40px;
   @media (max-width: 690px) {
-    padding-top: 80px;
+    padding-top: 0px;
     flex-direction: column;
     gap: 30px;
   }
   .left {
-    width: 45%;
+    width: 100%;
+    position: relative;
+    border: 4px solid var(--primary);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 350px;
+    transition: 0.3s linear;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+      width: 100%;
+    }
+    .switcher {
+      cursor: pointer;
+      background-color: var(--primary);
+      width: max-content;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      @include d-flex($g: 5px);
+      padding: 5px;
+      border-radius: 50px;
+      div {
+        padding: 8px;
+        width: 35px;
+        color: #517303;
+        border-radius: 20px;
+        z-index: 2;
+      }
+      .circle {
+        background-color: var(--white);
+        height: 35px;
+        position: absolute;
+        left: 5px;
+        z-index: 1;
+        transition: 0.2s cubic-bezier(0.47, 0.36, 0.65, 1.25);
+      }
+      .fabric {
+        left: 100%;
+        transform: translate(calc(-100% - 5px), 0);
+      }
+    }
     filter: drop-shadow(0 10px 10px #0002);
     @media (max-width: 690px) {
       width: 95%;
+    }
+    @media (max-width: 500px) {
+      height: 250px;
+      width: 100%;
     }
   }
   .right {
     width: 100%;
     @include d-flex($a-i: start, $f-d: column, $g: 30px);
     .title {
-      @include d-flex($a-i: start, $f-d: column, $g: 10px);
+      @include d-flex($a-i: start, $f-d: column);
       h1 {
         font-size: 32px;
         color: var(--text);
+        @media (max-width: 500px) {
+          font-size: 22px;
+        }
       }
-      div {
-        width: 100px;
-        padding: 2px;
-        background-color: var(--primary);
+      p {
+        color: var(--primary);
+        font-size: 26px;
+        @media (max-width: 500px) {
+          font-size: 20px;
+        }
       }
     }
     h3 {
       color: var(--text);
       font-size: 20px;
+      @media (max-width: 500px) {
+        font-size: 22px;
+      }
     }
     p {
       color: var(--text-light);
@@ -43,6 +113,7 @@
       padding: 20px 0;
       flex-wrap: wrap;
       gap: 15px;
+      cursor: pointer;
       div {
         width: 40px;
         height: 40px;
@@ -57,6 +128,10 @@
       .activeColor {
         outline: 3px solid var(--primary);
         transform: none !important;
+      }
+      @media (max-width: 500px) {
+        justify-content: center;
+        padding-bottom: 0;
       }
     }
 

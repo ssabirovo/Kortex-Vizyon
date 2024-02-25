@@ -34,7 +34,10 @@ function Navbar() {
             {Langs.map(
               (lang) =>
                 lang !== activeLang && (
-                  <p onClick={() => changeLang(lang)}> {lang}</p>
+                  <p key={lang} onClick={() => changeLang(lang)}>
+                    {" "}
+                    {lang}
+                  </p>
                 )
             )}
           </div>
