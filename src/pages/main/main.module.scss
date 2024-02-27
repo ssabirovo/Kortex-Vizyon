@@ -125,13 +125,19 @@
 }
 
 .why {
-  padding-top: 100px;
-  @include d-flex(start);
+  @include d-flex($a-i: start, $f-d: column);
+  padding-top: 150px;
+  padding-bottom: 100px;
+  @media (max-width: 500px) {
+  }
   .title {
     @include d-flex($a-i: start, $f-d: column, $g: 10px);
     h1 {
       font-size: 32px;
       font-weight: bold;
+      @media (max-width: 500px) {
+        font-size: 24px;
+      }
     }
     div {
       padding: 2px;
@@ -140,6 +146,196 @@
     }
     p {
       color: var(--text-light);
+    }
+  }
+  .cards {
+    @include d-flex($j-s: space-between, $a-i: start, $g: 9%);
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .card {
+      width: 100%;
+      height: 100%;
+      padding: 35px 40px;
+      border-radius: 10px;
+      box-shadow: 0px 13px 19px #0001;
+      @include d-flex($j-s: flex-start, $f-d: column, $g: 20px);
+      img {
+        width: 100%;
+      }
+      h3 {
+        color: var(--text);
+        text-align: start;
+        width: 100%;
+      }
+      p {
+        color: var(--text-light);
+      }
+    }
+  }
+  @media (max-width: 690px) {
+    display: none;
+  }
+}
+
+.how {
+  position: relative;
+  background-color: #11aabb;
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  @include d-flex(start);
+  video {
+    top: 50%;
+    position: absolute;
+    min-height: 100%;
+    max-height: 130%;
+    @media (max-width: 690px) {
+      max-height: 100%;
+    }
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    width: 100%;
+  }
+  .content {
+    width: 50%;
+    backdrop-filter: blur(18px);
+    color: var(--white);
+    padding: 30px 40px;
+    border-radius: 20px;
+    @include d-flex($a-i: start, $f-d: column, $g: 40px);
+    h1 {
+      font-size: 32px;
+      @media (max-width: 690px) {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-size: 18px;
+      @media (max-width: 690px) {
+        font-size: 16px;
+      }
+    }
+    button {
+      padding: 15px 30px;
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      @media (max-width: 690px) {
+        padding: 10px 25px;
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 690px) {
+      width: 100%;
+    }
+  }
+}
+
+.blogs {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .head {
+    @include d-flex(space-between, end);
+    .left {
+      width: 50%;
+      @media (max-width: 550px) {
+        width: 100%;
+      }
+      div {
+        width: 100px;
+        height: 4px;
+        background-color: var(--primary);
+        margin: 10px 0;
+      }
+      h1 {
+        font-size: 32px;
+        color: var(--text);
+      }
+      p {
+        color: var(--text-light);
+      }
+    }
+    button {
+      background-color: var(--white);
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      @media (max-width: 550px) {
+        display: none;
+      }
+    }
+  }
+  .cards {
+    margin-top: 90px;
+    @include d-flex($g: 100px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    @media (max-width: 950px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      * {
+        transition: 0.2s ease-out;
+      }
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      @include d-flex($f-d: column, $g: 20px);
+
+      .date {
+        color: var(--text-light);
+      }
+      .img {
+        width: 100%;
+        height: 200px;
+
+        border-radius: 20px;
+        background-image: url("/src/assets/images/blog-img.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.2s linear;
+        background-size: 100% 100%;
+      }
+      .info {
+        @include d-flex($a-i: start, $f-d: column, $g: 10px);
+        font-size: 14px;
+      }
+      .heading {
+        font-weight: bold;
+      }
+      .author {
+        @include d-flex($j-s: start, $g: 15px);
+        .position {
+          color: var(--text-light);
+          font-weight: 100;
+        }
+      }
+      &:hover {
+        * {
+          transition: 0.3s linear;
+          color: var(--text-light);
+        }
+
+        .img {
+          background-size: 120% 120%;
+        }
+      }
     }
   }
 }

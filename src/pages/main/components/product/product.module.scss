@@ -15,14 +15,19 @@
     width: 100px;
     margin: 10px 0;
   }
+  p {
+    color: var(--text-light);
+  }
 }
 .product {
   @include d-flex(space-between, $g: 100px);
   padding-top: 40px;
+
   @media (max-width: 690px) {
-    padding-top: 0px;
+    padding-top: 40px;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 140px;
   }
   .left {
     width: 100%;

@@ -1,0 +1,80 @@
+@import "/src/assets/mixins";
+
+.media {
+  padding-bottom: 100px;
+  @include d-flex(space-between, start, $g: 10%);
+  @media (max-width: 650px) {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .left {
+    width: 100%;
+    @include d-flex($a-i: start, $f-d: column, $g: 30px);
+    color: var(--text);
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .line {
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary);
+  }
+  .title {
+    @include d-flex($a-i: start, $f-d: column, $g: 10px);
+  }
+  .link {
+    @include d-flex($j-s: start, $a-i: start, $g: 10px);
+    width: 100%;
+    transition: 0.2s linear;
+    cursor: pointer;
+    transform-origin: left center;
+    &:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0px 5px 5px #0002);
+    }
+    svg {
+      width: 26px;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .icon {
+      width: 26px;
+      color: var(--primary);
+    }
+  }
+}
+.map {
+  transform: translate(0, 5px);
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: var(--primary);
+
+  .top {
+    @include d-flex(space-between, start);
+
+    div {
+      @include d-flex($a-i: end, $f-d: column, $g: 10px);
+      @media (max-width: 650px) {
+        align-items: start;
+      }
+      a {
+        color: var(--white);
+        text-decoration: none;
+      }
+    }
+    color: var(--white);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

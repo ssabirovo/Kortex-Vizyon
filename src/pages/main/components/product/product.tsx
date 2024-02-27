@@ -19,6 +19,7 @@ function Product() {
       <section className={cl.header}>
         <h1>Our product</h1>
         <div></div>
+        <p>Explore our product in various colors and forms</p>
       </section>
       <section className={cl.product}>
         <div
