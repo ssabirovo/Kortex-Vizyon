@@ -1,0 +1,77 @@
+@import "/src/assets/_mixins.scss";
+
+.video {
+  height: 60vh;
+  @include d-flex;
+  overflow: hidden;
+  video {
+    width: 100%;
+    @media (max-width: 820px) {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+.process {
+  padding-bottom: 100px;
+  .title {
+    padding: 30px 0;
+    @include d-flex(start, start, column, 10px);
+    h1 {
+      font-size: 32px;
+    }
+    div {
+      width: 100px;
+      height: 4px;
+      background-color: var(--primary);
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .step {
+    padding: 50px 0;
+    @include d-flex($g: 100px);
+    @media (max-width: 690px) {
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px 0;
+    }
+
+    div {
+      width: 100%;
+      @include d-flex(start, start, column, 30px);
+      @media (max-width: 690px) {
+        gap: 15px;
+      }
+      b {
+        color: var(--primary);
+        @media (max-width: 690px) {
+          font-size: 14px;
+        }
+      }
+      h1 {
+        color: var(--text);
+        @media (max-width: 690px) {
+          font-size: 22px;
+        }
+      }
+      p {
+        color: var(--text-light);
+        @media (max-width: 690px) {
+          font-size: 14px;
+        }
+      }
+    }
+    img {
+      width: 50%;
+    }
+  }
+  .step2 {
+    flex-direction: row-reverse;
+    @media (max-width: 690px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
