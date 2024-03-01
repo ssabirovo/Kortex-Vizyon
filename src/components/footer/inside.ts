@@ -18,12 +18,12 @@ export const mediaLinks: ImediaLinks[] = [
       {
         icon: "WhatsAppFooter",
         description: "+998-90-507-07-07",
-        link: "tel:+998905070707",
+        link: "#contact",
       },
       {
         icon: "WhatsAppFooter",
         description: "+998-99-462-45-58",
-        link: "tel:+998994624558",
+        link: "#contact",
       },
       {
         icon: "linkedIn",
@@ -57,8 +57,9 @@ export const mediaLinks: ImediaLinks[] = [
       },
       {
         icon: "Location",
-        description: "@kortexvizyon",
-        link: "https://www.linkedin.com/in/so1ov/",
+        description:
+          "Farg'ona viloyati, Buvayda tumani, Buvayda tumanining shaharchalari Kelajak ko'chasi",
+        link: "#location",
       },
     ],
   },

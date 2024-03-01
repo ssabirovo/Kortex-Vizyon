@@ -4,6 +4,9 @@
 :root {
   @include theme;
 }
+* {
+  scroll-behavior: smooth;
+}
 
 body,
 body * {

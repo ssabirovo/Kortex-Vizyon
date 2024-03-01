@@ -2,9 +2,10 @@
 
 .navbar {
   @include d-flex(space-between);
+  width: 100% !important;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   color: var(--text);
   background-color: var(--white);
   .left,
@@ -15,6 +16,9 @@
   }
   .left {
     justify-content: start;
+    * {
+      cursor: pointer;
+    }
   }
   .logo2 {
     @media (max-width: 990px) {
@@ -100,20 +104,17 @@
       display: inline;
     }
   }
-  .hamModal {
-    z-index: 10;
-    transition: 0.2s ease-in-out;
-    top: 0;
-    left: 0;
-    background-color: #0006;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    @include d-flex(flex-end);
-  }
-  .hamModalClose {
-    left: 100%;
-  }
+}
+.hamModal {
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  right: 0;
+  background-color: #0006;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  @include d-flex(flex-end);
   .container {
     width: 70%;
     height: 100%;
@@ -144,4 +145,7 @@
     width: 100%;
     @include d-flex($g: 20px);
   }
+}
+.hamModalClose {
+  right: -100%;
 }

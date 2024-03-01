@@ -199,11 +199,13 @@
     transform: translate(-50%, -50%);
   }
   .container {
+    z-index: 1;
     width: 100%;
   }
   .content {
     width: 50%;
     backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     color: var(--white);
     padding: 30px 40px;
     border-radius: 20px;
@@ -241,7 +243,7 @@
 
 .blogs {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 20px;
   .head {
     @include d-flex(space-between, end);
     .left {
@@ -279,6 +281,7 @@
     margin-top: 90px;
     @include d-flex($g: 100px);
     display: grid;
+    height: max-content;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     @media (max-width: 950px) {
@@ -295,7 +298,7 @@
       cursor: pointer;
       width: 100%;
       height: 100%;
-      @include d-flex($f-d: column, $g: 20px);
+      @include d-flex($j-s: space-between, $f-d: column, $g: 20px);
 
       .date {
         color: var(--text-light);
@@ -305,7 +308,6 @@
         height: 200px;
 
         border-radius: 20px;
-        background-image: url("/src/assets/images/blog-img.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -313,14 +315,28 @@
         background-size: 100% 100%;
       }
       .info {
-        @include d-flex($a-i: start, $f-d: column, $g: 10px);
+        @include d-flex(
+          $j-s: space-between,
+          $a-i: start,
+          $f-d: column,
+          $g: 10px
+        );
         font-size: 14px;
+        width: 100%;
+        height: calc(100% - 200px);
+      }
+      .date {
+        font-size: 100;
       }
       .heading {
         font-weight: bold;
       }
       .author {
         @include d-flex($j-s: start, $g: 15px);
+        .img {
+          width: 40px;
+          height: 40px;
+        }
         .position {
           color: var(--text-light);
           font-weight: 100;

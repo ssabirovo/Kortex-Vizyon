@@ -16,7 +16,7 @@ function Product() {
 
   return (
     <>
-      <section className={cl.header}>
+      <section className={cl.header} id="products">
         <h1>Our product</h1>
         <div></div>
         <p>Explore our product in various colors and forms</p>
@@ -66,7 +66,9 @@ function Product() {
               ))}
             </div>
           </div>
-          <button>Order</button>
+          <a href="#contact">
+            <button>Order</button>
+          </a>
         </div>
       </section>
     </>

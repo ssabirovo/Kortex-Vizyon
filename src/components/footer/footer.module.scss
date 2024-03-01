@@ -1,6 +1,7 @@
 @import "/src/assets/mixins";
 
 .media {
+  padding-top: 100px;
   padding-bottom: 100px;
   @include d-flex(space-between, start, $g: 10%);
   @media (max-width: 650px) {
@@ -67,6 +68,7 @@
       a {
         color: var(--white);
         text-decoration: none;
+        cursor: pointer;
       }
     }
     color: var(--white);

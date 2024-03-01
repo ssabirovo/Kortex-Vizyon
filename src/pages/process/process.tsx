@@ -24,8 +24,8 @@ function Process() {
           </p>
         </div>
 
-        {steps.map(({ step, title, img, description }, i) => (
-          <div className={cx(c.step, i % 2 !== 0 && c.step2)}>
+        {steps.map(({ step, title, img, description }, index) => (
+          <div key={index} className={cx(c.step, index % 2 !== 0 && c.step2)}>
             <div>
               <b>{step}</b>
               <h1>{title}</h1>
