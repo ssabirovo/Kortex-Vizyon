@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
 import c from "./blog.module.scss";
 import { blogs } from "./inside";
+import { sex } from "../main/main";
 
 function Blog() {
   const { blogName } = useParams();
 
-  console.log(blogName);
-
-  const { author, date, title, imgUrl, content, blogUrl } = blogs["blog1"];
+  const { author, date, title, imgUrl, content, blogUrl } =
+    blogs[blogName as sex];
 
   return (
     <section className={c.wrapper}>
@@ -23,8 +23,11 @@ function Blog() {
                 <p className={c.position}>{author.position}</p>
               </div>
             </div>
-            <p className={c.date}>{date}</p>
+            <a target="_blank" href={blogUrl} className={c.btn}>
+              Link to arcticle
+            </a>
           </div>
+          <p className={c.date}>{date}</p>
         </div>
 
         <div className={c.content}>
@@ -32,9 +35,6 @@ function Blog() {
             <p>{p}</p>
           ))}
         </div>
-        <a target="_blank" href={blogUrl} className={c.btn}>
-          Link to arcticle
-        </a>
       </div>
     </section>
   );

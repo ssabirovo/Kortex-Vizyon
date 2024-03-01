@@ -5,7 +5,7 @@ import { blogs } from "../blog/inside";
 import cl from "./main.module.scss";
 import useHandleNavigate from "../../services/navigate";
 
-type sex = keyof typeof blogs;
+export type sex = keyof typeof blogs;
 
 function Main() {
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ function Main() {
         </div>
       </section>
       <div id="how" className={cl.how}>
-        <video muted loop autoPlay={true} preload="auto">
+        <video autoPlay muted loop>
           <source src="/src/assets/videos/heros_video_process.mp4" />
         </video>
         <section className={cl.container}>
@@ -92,10 +92,9 @@ function Main() {
         <div className={cl.cards}>
           {blogsNames.map((name) => (
             <div
-
               key={name}
               className={cl.card}
-              onClick={() => handleNavigate(`/blog/${name}`)}
+              onClick={() => handleNavigate(`/blog/${blogs[name].path}`)}
             >
               <div
                 className={cl.img}
