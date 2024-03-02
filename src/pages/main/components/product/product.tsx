@@ -3,6 +3,7 @@ import { colorObj, colors } from "./inside";
 import cx from "classnames";
 import cl from "./product.module.scss";
 import Icon from "../../../../assets/icons/icon";
+import { useTranslation } from "react-i18next";
 
 function Product() {
   const [activeColor, setActiveColor] = useState<colorObj>({
@@ -13,13 +14,14 @@ function Product() {
     fabricUrl: "/src/assets/images/fabric-white.png",
   });
   const [isFabric, setIsBabric] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       <section className={cl.header} id="products">
-        <h1>Our product</h1>
+        <h1>{t("main.product.title")}</h1>
         <div></div>
-        <p>Explore our product in various colors and forms</p>
+        <p>{t("main.product.description")}</p>
       </section>
       <section className={cl.product}>
         <div
@@ -39,8 +41,10 @@ function Product() {
 
         <div className={cl.right}>
           <div className={cl.title}>
-            <h1>Recycled cotton</h1>
-            <p>{isFabric ? "In fabric form" : "In cotton form"}</p>
+            <h1>{t("main.product.name")}</h1>
+            <p>
+              {t(`main.product.${isFabric ? "statusFabric" : "statusCotton"}`)}
+            </p>
           </div>
           <div>
             <h3>{activeColor.name}</h3>
@@ -67,7 +71,7 @@ function Product() {
             </div>
           </div>
           <a href="#contact">
-            <button>Order</button>
+            <button>{t("main.product.order")}</button>
           </a>
         </div>
       </section>

@@ -18,8 +18,15 @@
   }
   .left {
     @include d-flex($a-i: start, $f-d: column, $g: 30px);
-    img {
-      width: 100%;
+    b {
+      color: var(--text);
+    }
+    h1 {
+      font-size: 50px;
+      color: var(--primary);
+      @media (max-width: 440px) {
+        font-size: 30px;
+      }
     }
     p {
       color: var(--text-light);
@@ -287,6 +294,7 @@
     @media (max-width: 950px) {
       grid-template-columns: 1fr 1fr;
       gap: 40px;
+      margin-top: 40px;
     }
     @media (max-width: 550px) {
       grid-template-columns: 1fr;

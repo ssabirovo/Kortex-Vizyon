@@ -10,7 +10,9 @@ import { changeLanguage } from "i18next";
 
 function Navbar() {
   const [closed, setClosed] = useState(true);
-  const [activeLang, setActiveLang] = useState("EN");
+  const [activeLang, setActiveLang] = useState(
+    localStorage.getItem("i18nextLng")
+  );
   const handleNavigate = useHandleNavigate();
   const { t } = useTranslation();
 
@@ -39,6 +41,7 @@ function Navbar() {
         <div className={cls.center}>
           {links.map(({ address, content, page }) => (
             <p
+              key={address}
               onClick={() => {
                 handleNavigate(page, address);
               }}
@@ -79,7 +82,9 @@ function Navbar() {
           </div>
           <div className={cls.body}>
             {links.map(({ address, content, page }) => (
-              <p onClick={() => handleNavigate(page, address)}>{t(content)}</p>
+              <p key={address} onClick={() => handleNavigate(page, address)}>
+                {t(content)}
+              </p>
             ))}
           </div>
           <div className={cls.footer}>

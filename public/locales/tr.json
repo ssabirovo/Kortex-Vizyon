@@ -3,5 +3,124 @@
     "homeBtn": "Anasayfa",
     "productBtn": "Ürünler",
     "contactBtn": "Bağlantı"
+  },
+  "main": {
+    "hero": {
+      "b": "Çevre dostu",
+      "title": " Rejenere pamuk",
+      "description": "Rejenere pamuk ile çevre dostu, yumuşak ve gezegen dostu moda keşfedin"
+    },
+
+    "product": {
+      "title": "Ürünümüz",
+      "description": "Ürünümüzü çeşitli renklerde ve formlarda keşfedin",
+      "name": "Renkli rejenere pamuk",
+      "statusCotton": "Pamuk formunda",
+      "statusFabric": "Kumaş formunda",
+      "order": "Sipariş vermek"
+    },
+    "why": {
+      "title": "Neden rejenere pamuk?",
+      "description": "Geri dönüştürülmüş pamuğun başlıca faydaları nelerdir ve neden bu kadar önemlidir?",
+      "card1": {
+        "title": "Atığı Azaltma",
+        "description": "Geri dönüştürülmüş tekstiller, moda atıklarını azaltır ve atılmış kumaşlara hayat verir."
+      },
+      "card2": {
+        "title": "Kaynakları Koruma",
+        "description": "Enerji, su ve boya kullanımı ön işlenmiş ürünle azaltılır."
+      },
+      "card3": {
+        "title": "Çevreyi Koruma",
+        "description": "Geri dönüşüm, kimyasal kullanımını azaltarak tekstil üretiminde çevresel etkiyi azaltır."
+      }
+    },
+    "how": {
+      "title": "Nasıl Yapılır?",
+      "description": "Ürünümüzün sıfırdan nasıl oluşturulduğuna dair süreç nedir?",
+      "btn": "Daha fazla"
+    }
+  },
+  "process": {
+    "step1": {
+      "step": "Adım 1",
+      "title": "TOPLAMA",
+      "description": "Dünya çapında toplamanın ilk adımı - pamuk kalıntılarını ve giysileri toplamak."
+    },
+    "step2": {
+      "step": "Adım 2",
+      "title": "TEMİZLEME",
+      "description": "Kullanılan ve kullanılmayan kalıntılar mekanik olarak özel cihazlarda işlenir, bunlar ikinci sınıfa, uzak ve olmayan yerlere gönderilen fırçalara yönlendirilir."
+    },
+    "step3": {
+      "step": "Adım 3",
+      "title": "KESİM",
+      "description": "Tahsis edilmiş malzemeler dikişlere takılır, örneğin düğmeler, fermuarlar ve katılmayacak şeyler, kesilir."
+    },
+    "step4": {
+      "step": "Tamamlandı",
+      "title": "Sonuç",
+      "description": "Kalıntı işleme süreci tamamlandıktan sonra, üretilen kumaşların koleksiyonu, bu son ürünü yansıtır, onun güvenilir değişimlerini ve modanın ekolojik özelliklerini gösterir."
+    }
+  },
+  "blogs": {
+    "linkBtn": "Makaleye bağlantı",
+    "blog1": {
+      "title": "Yeniden işlenmiş pamuk bez mi? Sürdürülebilir mi?",
+      "position": "Kariwala Endüstriyel Mali Hizmetler Direktörü",
+      "date": "3 yıl önce",
+      "content": {
+        "blog1": "Pamuk kaynaklarının üretimi için çok miktarda su ve kimyasal madde gereklidir. Bu nedenle, mevcut pamuk üretim yöntemlerinin geniş bir şekilde kullanılan talebi göz önüne alındığında, uzun vadede sürdürülebilir değildir.",
+        "blog2": "Bu nedenle, çevreyi korumak için yeniden işlenmiş iplik ve kumaş endüstrisini desteklemek gereklidir. Yeniden işlenmiş pamuk ipliği, önceden kullanılmış ve sonraki kullanıcılar tarafından kullanılan pamuk ipliğinin bir kombinasyonudur:",
+        "blog3": "1. Önceden kullanılan pamuk kumaşları (basit iplik işleme sürecinde toplanan pamuk lifleri) ve işleme sürecinde ortaya çıkan diğer pamuk artıkları ile karıştırılan ön-tüketici pamuk, toplamın %10-15'ini oluşturur.",
+        "blog4": "2. Geri kalanı, atık tekstil ürünlerinden gelir ve işleme sürecinden arta kalan pamuktan oluşur.",
+        "blog5": "Yeniden işlenmiş pamuk üretim süreçlerini gerçekleştirmek için şu adımlar beklenir:",
+        "blog6": "a. Son tüketici geri dönüşüm aşamalarından geçirilir, burada kumaş ve iplik liflerine ayrılır.",
+        "blog7": "b. Son tüketici geri dönüşüm aşamalarından geçirilen materyal renklidir, bu nedenle orijinal rengine geri döndürülmesi gerekir.",
+        "blog8": "c. Bu malzeme pamuk ipliklerine eklenir ve yeni bir şey şekillendirilir.",
+        "blog9": "d. Bu malzeme uzun süreli bir süreçtir ve birkaç nesil pamuk eklenir.",
+        "blog10": "e. Sonra, iplikleme süreci gerçekleşir.",
+        "blog11": "GRS (Global Recycled Standard) sertifikası, bir üründeki yeniden işlenmiş içeriği sertifikalandırmak için uluslararası bir standarttır. Bu, yeniden işlenmiş pamuğun gerçekliğini doğrulamak için en güvenilir standarttır. GRS standartlarına göre, yeniden işlenmiş %65 pamuk ipliği %100 yeniden işlenmiş ürün olarak sertifikalandırılabilir. Güney Hindistan'da birçok fabrika, GRS standartlarına uygun olarak sertifikalı yeniden işlenmiş pamuk üretmektedir."
+      }
+    },
+    "blog2": {
+      "title": "Eski kıyafetlerinizi ne zaman atarsınız?",
+      "position": "DAYALIZE'da Genel Müdür",
+      "date": "18 Ağustos 2022",
+      "content": {
+        "blog1": "İstenmeyen kıyafetlerinizi geri dönüştürmek hiç bu kadar kolay olmamış gibi görünüyor. Büyük perakendeciler artık kullanışlı teslim noktalarına sahip.",
+        "blog2": "Ancak küresel olarak, giysi atıklarının sadece yüzde 20'si yeniden kullanım veya geri dönüşüm için toplanırken, çoğu çöplüğe gönderilir veya yakılır.",
+        "blog3": "Dolabınızı düzenledikten ve yerel hayır kurumlarına veya geri dönüşüm noktalarına gerekli teslimatları yaptıktan sonra, istenmeyen kıyafetlerinizin karmaşık bir yolculuğu başlar.",
+        "blog4": "Bu tekrar kullanılabilir kıyafetlerin yaklaşık yüzde 20'si yerel olarak satılırken, geri kalanı Uganda, Kenya, Macaristan, Hindistan, Bangladeş, Gana ve Pakistan gibi ülkelere gönderilen ve orada satılan tekstil tüccarlarına satılır. Yurtdışına ulaştıklarında, bu kıyafetlerin sadece yüzde 70'i gerçekten yeniden kullanılırken, geri kalanı daha düşük değerli ürünlere - yalıtım malzemesi veya temizlik bezleri gibi - geri dönüştürülür veya çöplüğe veya yakılır.",
+        "blog5": "Ancak ikinci el kıyafet ithalatçıları, kendilerine gönderilen giysilerin kitlelerinden bunalmaya başladı... Ülkenin aldığının yüzde 40'ı doğrudan çöplüğe gidiyor.",
+        "blog6": "Kıyafetler, geri dönüşüm için lif ve renge göre sıralanır, ancak pamuklu polyester gibi karışık liflerden yapılmış giysiler gibi karışık lifler başka bir büyük zorluk oluşturur. Boyanmış kumaşlar ve diğer kirleticilerle birlikte, bu giysilerdeki farklı malzemeler ayrılamaz, bu nedenle bu tekstil atıklarının çoğu çöplüğe veya yakıma gider.",
+        "blog7": "[Farklı liflerin] karışımları [mevcut] geri dönüşüm süreçleri için sorunlu. Bir polyester-pamuk karışımı, iplik seviyesinde bir karışımdır ve ayrılmak çok zordur. Neyse ki, karışık tekstillerle başa çıkmak için çeşitli kimyasal geri dönüşüm teknikleri geliştirilmektedir.",
+        "blog8": "Kıyafetlerimizi atıyoruz, ya çöplüklere gidiyorlar ya da tekrar satılıyorlar. Ancak şimdi dünya çapındaki ikinci el kıyafetler ve kumaşlar için birçok geri dönüşüm fabrikası var, düğmeleri, fermuarları ve etiketleri çıkarmak için parçalanıyorlar ve sonra yeniden amaçlanmak üzere işleniyor ve iplik olarak kullanılıyorlar.",
+        "blog9": "Bu iplik, ucuz battaniyeler ve halılar oluşturmak için kullanılır ve çökük fiyatlarda satılır."
+      }
+    },
+    "blog3": {
+      "title": "Fiberden fiber geri dönüşümün ölçeklendirilmesinin zorlukları",
+      "position": "Avrupa Tekstil ve Giyim Sektörünün Geleceği İçin Teknoloji Platformu Genel Sekreteri",
+      "date": "6 Haziran 2023",
+      "content": {
+        "blog1": "Bugün, tekstil döngüselliği konusuna geri dönüyorum. Daha önceki düşünce parçalarında toplam tekstil atık hacimlerine ve tekstil atıklarının türlerine baktıktan sonra, bugünkü makale, fiberden fiber geri dönüşümünün zorluklarına biraz ışık tutuyor.",
+        "blog2": "Döngüselliği düşünürken geri dönüşüm herkesin aklına ilk gelen şeydir. Ve kağıttan cam ve metale kadar birçok malzeme sektöründe mümkün olduğunu biliyoruz, peki neden tekstiller için değil? Cevap aslında kitapları, cam şişeleri veya alüminyum kutuları tam otomatik hale getirdiğimiz sorusuna verdiğimiz cevapla aynıdır, ancak giysileri değil. Sadece çok daha karmaşıktır.",
+        "blog3": "Bu karmaşıklıklara dalacağım ve şunları tartışacağım:",
+        "blog4": "- açık döngü ve kapalı döngü döngüselliği arasındaki farklar",
+        "blog5": "- mekanik ve kimyasal tekstil geri dönüşümünün potansiyeli ve sınırları",
+        "blog6": "- hammaddelerin ihtiyaçları ve mevcudiyeti",
+        "blog7": "- bazı yaygın tekstil liflerinin geri dönüşüm ölçekleri",
+        "blog8": "- fiberden fiber geri dönüşümün mümkün olabilmesi için ön koşullar",
+        "blog9": "- tekstil geri dönüşümü için düzenleyici sürücüler ve engelleyiciler",
+        "blog10": "Fiberden fiber geri dönüşümünün sadece bölgesel ölçekte faaliyet gösteren ve talebe göre üretim yapabilen tam bir tekstil ve giyim üretim değer zinciri içine entegre edildiğinde anlam ifade ettiğini, bu durumun Avrupa için 2030'dan çok daha uzak olduğunu belirterek sonuçlandırıyorum.",
+        "blog11": "Her zamanki gibi, konuyla ilgili tüm yorumlar, yapıcı eleştiriler ve yararlı daha fazla okuma materyaline bağlantılar çok hoşgeldiniz."
+      }
+    }
+  },
+  "footer": {
+    "media": "Sosyal medya",
+    "contacts": "Temas",
+    "address": "Fergana bölgesi, Buvayda ilçesi, Buvayda ilçesine bağlı kasabalar, Kelajak caddesi"
   }
 }

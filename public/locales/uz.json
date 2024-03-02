@@ -3,5 +3,124 @@
     "homeBtn": "Asosiy",
     "productBtn": "Mahsulotlar",
     "contactBtn": "Kontaktlar"
+  },
+  "main": {
+    "hero": {
+      "b": "Ekologik toza",
+      "title": "Qayta ishlangan Paxta",
+      "description": "Qayta ishlangan paxtamiz bilan ekologik zamonaviy uslubni kashf eting — barqaror, yumshoq va sayyoramiz uchun qulay moda"
+    },
+    "product": {
+      "title": "Bizning mahsulot",
+      "description": "Bizning mahsulotimizni har xil rang va shaklda ko'ring",
+      "name": "Rangi ko'p qayta ishlangan paxta",
+      "statusCotton": "Paxta shaklida",
+      "statusFabric": "To'qima shaklida",
+      "order": "Buyurtma"
+    },
+    "why": {
+      "title": "Nega qayta ishlangan paxta?",
+      "description": "Qayta ishlangan paxtaning asosiy afzalliklari nimada va nima uchun bu juda muhim?",
+      "card1": {
+        "title": "Chiqindilarni kamaytirish",
+        "description": "Qayta ishlangan to'qimachilik moda chiqindilarini kamaytiradi va tashlab ketilgan matolarga hayot beradi.."
+      },
+      "card2": {
+        "title": "Resurslarni saqlash",
+        "description": "Energiya, suv, bo'yoq ishlab chiqarishga o'zgartirilgan mahsulot bilan qayta ishlash orqali xarajatni kamaytirish"
+      },
+      "card3": {
+        "title": "Atrof-muhitni saqlash",
+        "description": "Qayta ishlash kimyoviy materiallarni kamaytiradi, shuningdek, tekstil ishlab chiqarishda atrof-muhitga etkazishni qisqartiradi."
+      }
+    },
+    "how": {
+      "title": "Qanday qilib yaratiladi?",
+      "description": "Mahsulotimizni noldan yaratish jarayoni qanday?",
+      "btn": "Batafsil"
+    }
+  },
+  "process": {
+    "step1": {
+      "step": "1-qadam",
+      "title": "TO'PLASH",
+      "description": "Paxtali qoldiq va kiyimlarni jahon bo'ylab to'plashning birinchi bosqichi - paxtali qoldiqlarni va kiyimlarni to'plash."
+    },
+    "step2": {
+      "step": "2-qadam",
+      "title": "TOZAJOYLANISH",
+      "description": "Ishlatilgan va ishlatilmagan qoldiqlar maxsus uskunalarda mekhanik ravishda ishlantiriladi, ularni ikkinchi qatorga, uzoq va olmagan elchaklarga aylantiradigan firiklarga aylantiradi."
+    },
+    "step3": {
+      "step": "3-qadam",
+      "title": "TO'QIMACHILIK",
+      "description": "Soravlarga talqinli ajratilgan materiallar, masalan, tugmachalar, ziplar va qay qanday qay berilmaydigan narsalar, olib tashlanadi."
+    },
+    "step4": {
+      "step": "Yakunlangan",
+      "title": "Oxirgi natija",
+      "description": "Qoldiq ishlash jarayonini yakunlagandan so'ng, tiklanib chiqarilgan paxtalarning ko'rgazmasi, ushbu oxirgi mahsulotni eslatadi, uning ishonchli o'zgarishlarini va modaning ekologik sifatlarini modada namoyish etadi."
+    }
+  },
+
+  "blogs": {
+    "linkBtn": "Maqolaga havola",
+    "blog1": {
+      "title": "Qayta ishlangan paxta ekologik jihatdan qulaymi?",
+      "position": "Kariwala Industries Moliyaviy xizmatlar boshqarmasi",
+      "date": "3 yil avval",
+      "content": {
+        "blog1": "Paxta resurs talab qiladigan ekin hisoblanadi. Uni etishtirish uchun ko'p miqdorda suv va kimyoviy moddalar kerak. Demak, paxta yetishtirishning hozirgi usullari juda katta talabni hisobga olgan holda uzoq muddatda barqaror emas.",
+        "blog2": "Demak, atrof-muhitni muhofaza qilish uchun qayta ishlangan ip va matolardan foydalanish zarurati tug'iladi. Qayta ishlangan paxta iplari iste'moldan oldingi va iste'moldan keyingi paxta birikmasidir:",
+        "blog3": "1. Avvaldan iste'mol qilinadigan pamuk daryolari (oddiy iplik ishlov berish jarayonida tushgan pamuk fiberi) va ishlov berish jarayonida paydo bo'lgan boshqa pamuk o'choqlari bilan tarkiblangan pre-consumer pamuk 10-15%ni tashkil etadi.",
+        "blog4": "2. Qolgan qismi bekor qilingan tekstil mahsulotlardan keladi, va boshqa foydalanuvchilar tomonidan ishlov berish jarayonidan qolgan pamuk.",
+        "blog5": "Qayta ishlangan pamuk ishlab chiqarish jarayonlarini o'tkazish uchun quyidagi qadamlar kutiladi:",
+        "blog6": "a. Post-consumer o'tkazilgan bosqichlari qiyalishi jarayonidan o'tkaziladi, bu yerda fabric va iplik fiberlarga ajratiladi.",
+        "blog7": "b. Post-consumer o'tkazilgan bosqichlari ranglangan materialdir, shuning uchun uni asal rangiga qaytarish kerak.",
+        "blog8": "c. Ushbu material pamuk daryolariga qo'shiladi va yangi narsani shakllantiradi.",
+        "blog9": "d. Bu material uzunlikda qisqacha bo'lib, bir qancha ajdod pamuk qo'shiladi.",
+        "blog10": "e. Keyin spinning jarayoni olib boradi.",
+        "blog11": "GRS (Global Recycled Standard) sertifikati, bir mahsulotda qayta ishlangan tarkibni sertifikatlash uchun xalqaro standartdir. Bu, qayta ishlangan pamukning haqiqiyligini tekshirish uchun eng ishonchli standartdir. GRS standartlariga muvofiq qayta ishlangan 65% pamuk ipligi 100% qayta ishlangan mahsulot sifatida sertifikatlangan bo'lishi mumkin. Janubiy Hindistonda bir nechta fabrikalar GRS standartlariga muvofiq sertifikatlangan qayta ishlangan pamukni pichiradi."
+      }
+    },
+    "blog2": {
+      "title": "Eski kiyimlaringizni tashlaganingizda nima bo'ladi?",
+      "position": "DAYALIZE boshqaruvchi direktori",
+      "date": "2022 yil 18 avgust",
+      "content": {
+        "blog1": "Sizning istagan kiyimlaringizni qayta ishlash hali hech qachon osongina bo‘lmaganiga o‘xshash bo‘ladi. Asosiy savdo markazlarining endi foydali joylari bor.",
+        "blog2": "Jahon bo‘ylab, kiyim artloq bosqichida to‘plangan tozaliklarning faqat 20 foizi qayta ishlatish va qayta ishlash uchun to‘plangan, qolgan qismi esa poligon yoki yakishbaliqlarga topshiriladi.",
+        "blog3": "Siz garderobingizni bo‘shatib, mahalliy xayriya do‘konlariga yoki qayta ishlash nuqtalariga kerakli ovqatni topshirganingizda, so‘ngsiz, istagan kiyimlaringizning murakkab safar boshlanadi.",
+        "blog4": "Bu qayta ishlanadigan kiyimlarining faqat 20 foizi mamlakat ichida sotiladi, qolgan qismi esa tozalik aldashlari sifatida savdo markazlariga sotiladi, ular uni Uganda, Kenya, Xudzhand, Hindiston, Bangladeş, Gana va Pokiston kabi mamlakatlarga olib borishadi. Xorijga yetganlaridan, kiyimlarning faqat 70 foizi qayta ishlatiladi, qolgan qismi esa past qiymatli mahsulotlarga, masalan, issiqlik materialiga yoki tozalikga yoki yakishbaliqlarga topshiriladi.",
+        "blog5": "Birozda ikkinchi qo‘llanmagan kiyimlarni import qiluvchi mamlakatlar, ularni yo‘q qilishga solishtirilmoqda... Mamlakat qabul qilgan narsalarning 40 foizi tozalikga so‘ng to‘qiydi.",
+        "blog6": "Kiyimlar qayta ishlovchi bo‘lish uchun fiber va rang bo‘yicha tajribadan o‘tadi, ammo poldiester va paxtadagi qiliblanmagan fiberlar kabi blend tekstilleri bu safarliq muammo tug‘diradi. Boylangan va boshqa kontaminantlar bilan birgalikda, kiyimlar tarkibidagi turli materiallar ajratib turib bo‘lmaydi, shuning uchun bu tekstil atığıning katta qismi tozalikga yoki yakishbaliqlarga topshiriladi.",
+        "blog7": "Qarışımlar [turli fiberlar] hozirgi qayta ishlovchi jarayonlari uchun muammolidir. Poliester-paxta qarışığı oshiq sathdagi qarışıqdir va ajratib bo‘lmaydi. Omadliroq, har xil kimyoviy qayta ishlov jarayonlari blend tekstillarga qarshi kurashish uchun rivojlantirilmoqda.",
+        "blog8": "Biz kiyimlarimizni yo‘q qilganimizda, ular yoki tozalikga topshiriladi yoki qayta sotiladi. Lekin, hozirgi zamonlarda, dunyodagi ikkinchi qo‘llanmagan kiyim va tikanaklar ko‘plik bilan tozalanib, tugma, molini va yorliqlarini olib tashlab, so‘ng uni qayta ishlash va o‘rganish uchun ishlangan ko‘p qavatli o‘rlarga ajratiladi va qayta qayta foydalanish uchun ishlatiladi.",
+        "blog9": "Bu o‘rliklar arzon qoplamalar va mаттalлар yaratish uchun ishlatiladi, ularni asboblar sotiladi."
+      }
+    },
+    "blog3": {
+      "title": "Toladan tolaga qayta ishlashni kengaytirish muammolari",
+      "position": "Toʻqimachilik va kiyim-kechak kelajagi uchun Yevropa texnologik platformasi bosh kotibi",
+      "date": "2023 yil 6 iyun",
+      "content": {
+        "blog1": "Bugun men tekstil doirasining to'rtma-to'rtinlik mavzusiga qaytaman. Avvalgi ko'chirmanlarda umumiy tekstil o'tkir isrof miqdorlarini va tekstil o'tkir turini tahlil qilganingdan so'ng, bugungi maqolada to'qimachilikdan to'qimachilikka qaytishning muammolari haqida boshqacha so'rovlar o'rnini oladi.",
+        "blog2": "Davriylik haqida o'ylaganda, birinchi narsa, qayta ishlash keladi. Biz qog'ozdan qog'ozga, shishadan qog'ozga, metaldan qog'ozga ko'p material sektorlarida mumkin. Textillarga qo'lidagi javob o'ylangan savolga o'xshashdir, qadam. Bu faqat ko'proq murakkabdir.",
+        "blog3": "Men bu murakkablarni o'rganib, quyidagi mavzularni muzokaralasamchi:",
+        "blog4": "- ochiq do'ngli va yopiq do'ngli doirali kabi farq",
+        "blog5": "- mexanik va kimyoviy tekstil qayta ishlashning imkoniyatlari va cheklovlari",
+        "blog6": "- odam va mavjudliklari",
+        "blog7": "- qanday- qanday umumiy tekstil to'g'risidagi qayta ishlash",
+        "blog8": "- to'qimachilikdan to'qimachilikka qayta ishlashni amalga oshirish uchun oldindan shartlar",
+        "blog9": "- tekstil qayta ishlash uchun tartibga solish uchun nazorat qiluvchi hayotiy va ta'qiqlar",
+        "blog10": "Men to'g'ri, to'g'rimi, faqatgina regional miqdorda va talabga ko'ra ishlab chiqarishga qodir, bularning mazmuni tekstil va kiyim ishlab chiqarishning butun qadriyatli tizimiga integratsiya qilingan holda faoliyat ko'rsatishi mumkin, bu haqda ko'proq so'zlasha bilan tugayman, Evropani qadrlangan, 2030-yilgacha juda uzoq.",
+        "blog11": "Odatda, ushbu mavzudagi barcha sharhlar, yaratuvchi mulohazalar va foydali o'qish materiallariga ssilkalar katta qadr bildiriladi."
+      }
+    }
+  },
+  "footer": {
+    "media": "Ijtimoiy media",
+    "contacts": "Aloqa",
+    "address": "Farg'ona viloyati, Buvayda tumani, Buvayda tumani qishloqlari, Kelajak ko'chasi"
   }
 }

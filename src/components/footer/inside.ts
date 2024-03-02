@@ -13,17 +13,17 @@ interface ImediaLinks {
 
 export const mediaLinks: ImediaLinks[] = [
   {
-    title: "Social media",
+    title: "footer.media",
     links: [
       {
         icon: "WhatsAppFooter",
         description: "+998-90-507-07-07",
-        link: "#contact",
+        link: "https://api.whatsapp.com/send/?phone=%2B998905070707&text&type=phone_number&app_absent=0",
       },
       {
         icon: "WhatsAppFooter",
         description: "+998-99-462-45-58",
-        link: "#contact",
+        link: "https://api.whatsapp.com/send/?phone=%2B998994624558&text&type=phone_number&app_absent=0",
       },
       {
         icon: "linkedIn",
@@ -38,7 +38,7 @@ export const mediaLinks: ImediaLinks[] = [
     ],
   },
   {
-    title: "Contacts",
+    title: "footer.contacts",
     links: [
       {
         icon: "Phone",
@@ -57,8 +57,7 @@ export const mediaLinks: ImediaLinks[] = [
       },
       {
         icon: "Location",
-        description:
-          "Farg'ona viloyati, Buvayda tumani, Buvayda tumanining shaharchalari Kelajak ko'chasi",
+        description: "footer.address",
         link: "#location",
       },
     ],

@@ -4,12 +4,14 @@ import { whyCards } from "./why-inside";
 import { blogs } from "../blog/inside";
 import cl from "./main.module.scss";
 import useHandleNavigate from "../../services/navigate";
+import { useTranslation } from "react-i18next";
 
 export type sex = keyof typeof blogs;
 
 function Main() {
   const navigate = useNavigate();
   const blogsNames: sex[] = ["blog1", "blog2", "blog3"];
+  const { t } = useTranslation();
 
   const handleNavigate = useHandleNavigate();
 
@@ -17,13 +19,14 @@ function Main() {
     <>
       <section id="main" className={cl.hero}>
         <div className={cl.left}>
-          <img src="/src/assets/images/header-img.svg" alt="" />
-          <p>
-            Discover eco-chic style with our recycled cotton—fashion that's
-            sustainable, soft, and planet-friendly
-          </p>
-          <a href="#contact">
-            <button>Contact</button>
+          <h1>
+            <b>{t("main.hero.b")}</b> <br />
+            {t("main.hero.title")}
+          </h1>
+
+          <p>{t("main.hero.description")}</p>
+          <a href="#products">
+            <button>{t("navbar.productBtn")}</button>
           </a>
         </div>
         <div className={cl.right}>
@@ -41,16 +44,16 @@ function Main() {
       <Product />
       <section id="why" className={cl.why}>
         <div className={cl.title}>
-          <h1>Why Recycled Cotton ?</h1>
+          <h1>{t("main.why.title")}</h1>
           <div></div>
-          <p>What are the main benefits of recycled cotton ?</p>
+          <p>{t("main.why.description")}</p>
         </div>
         <div className={cl.cards}>
           {whyCards.map(({ description, imgUrl, title }) => (
             <div className={cl.card} key={title}>
               <img src={imgUrl} alt="" />
-              <h3>{title}</h3>
-              <p>{description}</p>
+              <h3>{t(title)}</h3>
+              <p>{t(description)}</p>
             </div>
           ))}
         </div>
@@ -61,18 +64,15 @@ function Main() {
         </video>
         <section className={cl.container}>
           <div className={cl.content}>
-            <h1>How it’s made ?</h1>
-            <p>
-              What is the process involved in creating our product from start to
-              finish ?
-            </p>
+            <h1>{t("main.how.title")}</h1>
+            <p>{t("main.how.description")}</p>
             <button
               onClick={() => {
                 navigate("/process");
                 window.scrollTo(0, 0);
               }}
             >
-              See more
+              {t("main.how.btn")}
             </button>
           </div>
         </section>
@@ -102,8 +102,8 @@ function Main() {
               ></div>
               <div className={cl.info}>
                 <div>
-                  <p className={cl.date}>{blogs[name].date}</p>
-                  <p className={cl.heading}>{blogs[name].title}</p>
+                  <p className={cl.date}>{t(blogs[name].date)}</p>
+                  <p className={cl.heading}>{t(blogs[name].title)}</p>
                 </div>
                 <div className={cl.author}>
                   <img
@@ -113,7 +113,7 @@ function Main() {
                   />
                   <div>
                     <p className={cl.name}>{blogs[name].author.name}</p>
-                    <p className={cl.position}>{blogs[name].author.position}</p>
+                    <p className={cl.position}>{t(blogs[name].author.position)}</p>
                   </div>
                 </div>
               </div>

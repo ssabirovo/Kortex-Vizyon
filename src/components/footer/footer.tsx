@@ -2,23 +2,26 @@ import Icons from "../../assets/icons";
 import cl from "./footer.module.scss";
 import { mediaLinks } from "./inside";
 import useHandleNavigate from "../../services/navigate";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
   const handleNavigate = useHandleNavigate();
+  const { t } = useTranslation();
+
   return (
     <>
       <section id="contact" className={cl.media}>
         {mediaLinks.map(({ title, links }, i) => (
           <div key={i} className={cl.left}>
             <div className={cl.title}>
-              <h1>{title}</h1>
+              <h1>{t(title)}</h1>
               <div className={cl.line}></div>
             </div>
 
             {links.map(({ icon, description, link }, i) => (
               <div key={i} className={cl.link}>
                 <Icons name={icon} className={cl.icon} />
-                <a href={link}>{description}</a>
+                <a href={link}>{t(description)}</a>
               </div>
             ))}
           </div>
@@ -42,9 +45,9 @@ function Footer() {
             <a onClick={() => handleNavigate("/", "#why")}>
               Why recycled cotton ?
             </a>
-            <a onClick={() => handleNavigate("/", "#how")}>How it’s made</a>
-            <a onClick={() => handleNavigate("/", "#blogs")}>Blogs</a>
-            <a onClick={() => handleNavigate("/", "#contact")}>Contacts</a>
+            <a onClick={() => handleNavigate("/", "#how")}>{t("main.why.title")}</a>
+            <a onClick={() => handleNavigate("/", "#blogs")}>{t("main.why.title")}</a>
+            <a onClick={() => handleNavigate("/", "#contact")}>{t("footer.contacts")}</a>
           </div>
         </div>
         <div className={cl.top}>

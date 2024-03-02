@@ -1,8 +1,11 @@
 import c from "./index.module.scss";
 import cx from "classnames";
 import { steps } from "./inside";
+import { useTranslation } from "react-i18next";
 
 function Process() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={c.video}>
@@ -16,22 +19,19 @@ function Process() {
 
       <section className={c.process}>
         <div className={c.title}>
-          <h1>How it’s made ?</h1>
+          <h1>{t("main.how.title")}</h1>
           <div></div>
-          <p>
-            What is the process involved in creating our product from start to
-            finish ?
-          </p>
+          <p>{t("main.how.description")}</p>
         </div>
 
         {steps.map(({ step, title, img, description }, index) => (
           <div key={index} className={cx(c.step, index % 2 !== 0 && c.step2)}>
             <div>
-              <b>{step}</b>
-              <h1>{title}</h1>
-              <p>{description}</p>
+              <b>{t(step)}</b>
+              <h1>{t(title)}</h1>
+              <p>{t(description)}</p>
             </div>
-            <img src={img} alt="" />
+            <img src={t(img)} alt="" />
           </div>
         ))}
       </section>

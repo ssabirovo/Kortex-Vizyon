@@ -7,19 +7,17 @@ interface card {
 export const whyCards: card[] = [
   {
     imgUrl: "/src/assets/images/card1.svg",
-    title: "Reducing waste",
-    description:
-      "Recycled textiles mitigate fashion waste, breathing life into discarded fabrics.",
+    title: "main.why.card1.title",
+    description: "main.why.card1.description",
   },
   {
     imgUrl: "/src/assets/images/card2.svg",
-    title: "Saving resources",
-    description: "Energy, water, dye use reduced with pre-processed product.",
+    title: "main.why.card2.title",
+    description: "main.why.card2.description",
   },
   {
     imgUrl: "/src/assets/images/card3.svg",
-    title: "Save environment",
-    description:
-      "Recycling cuts chemical use, lessening environmental impact in textile production.",
+    title: "main.why.card3.title",
+    description: "main.why.card3.description",
   },
 ];

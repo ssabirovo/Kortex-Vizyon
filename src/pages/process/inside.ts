@@ -7,31 +7,27 @@ interface iStep {
 
 export const steps: iStep[] = [
   {
-    step: "Step 1",
-    title: "GATHERING",
-    description:
-      "The first step in cotton recycling is the collection of cotton waste and garments from all over the world.",
+    step: "process.step1.step",
+    title: "process.step1.title",
+    description: "process.step1.description",
     img: "/src/assets/images/step1.png",
   },
   {
-    step: "Step 2",
-    title: "CLEANING",
-    description:
-      "Pre-consumer scraps and post-consumer materials are run through a machine that mechanically takes them back to fibers, which are inevitably weaker than virgin ones.",
+    step: "process.step2.step",
+    title: "process.step2.title",
+    description: "process.step2.description",
     img: "/src/assets/images/step2.png",
   },
   {
-    step: "Step 3",
-    title: "CHIPPING",
-    description:
-      "Sorters remove foreign components, like buttons, zippers and all that is not recyclable",
+    step: "process.step3.step",
+    title: "process.step3.title",
+    description: "process.step3.description",
     img: "/src/assets/images/step3.png",
   },
   {
-    step: "Final",
-    title: "Final Result",
-    description:
-      "After completion, recycled cotton exhibits a visual appearance that resembles this final product, showcasing its sustainable transformation and eco-friendly qualities in the fashion industry.",
+    step: "process.step4.step",
+    title: "process.step4.title",
+    description: "process.step4.description",
     img: "/src/assets/images/step4.png",
   },
 ];
