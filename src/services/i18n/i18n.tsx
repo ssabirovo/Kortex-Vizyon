@@ -9,9 +9,16 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    backend: { loadPath: "../../../public/locales/{{lng}}.json" },
-    fallbackLng: "en",
+    backend: { loadPath: "/common/{{lng}}.json" },
+    fallbackLng: "uz",
+    detection: {
+      order: ["localStorage", "htmlTag", "path", "subdomain"],
+      caches: ["localStorage"],
+    },
     debug: true,
+    interpolation: {
+      escapeValue: false,
+    },
   });
 
 export default i18n;
