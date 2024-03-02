@@ -12,6 +12,7 @@ i18n
     backend: { loadPath: "../../../public/locales/{{lng}}.json" },
     fallbackLng: "en",
     debug: true,
+    
   });
 
 export default i18n;
