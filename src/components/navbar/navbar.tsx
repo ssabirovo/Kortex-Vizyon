@@ -28,13 +28,13 @@ function Navbar() {
         <div className={cls.left}>
           <img
             onClick={() => navigate("/")}
-            src="/src/assets/images/logo1.svg"
+            src="../../../src/assets/images/logo1.svg"
             alt=""
           />
           <img
             onClick={() => navigate("/")}
             className={cls.logo2}
-            src="/src/assets/images/logo2.svg"
+            src="../../../src/assets/images/logo2.svg"
             alt=""
           />
         </div>
