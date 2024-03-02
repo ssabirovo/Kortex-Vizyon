@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import Icons from "../../assets/icons";
 import cl from "./footer.module.scss";
 import { mediaLinks } from "./inside";

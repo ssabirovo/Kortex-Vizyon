@@ -22,7 +22,7 @@ export const blogs: iBlogs = {
   blog1: {
     path: "blog1",
     imgUrl:
-      "https://nypost.com/wp-content/uploads/sites/2/2023/04/shutterstock_1599713257.jpg",
+      "https://images.squarespace-cdn.com/content/v1/584738ff20099e6c2da92f74/1507719298557-EXEIU4CAUW4XB1S6GUY2/sustainable+cotton",
     date: "3 years ago",
     title: "Is recycled cotton sustainable? ",
 
@@ -63,7 +63,17 @@ export const blogs: iBlogs = {
       name: "Dayal R.",
       position: "Managing Director at DAYALIZE",
     },
-    content: [],
+    content: [
+      "It’s never been easier to recycle your unwanted clothes, it would seem. Major retailers now have handy drop-off points.",
+      "Globally though, only 20 per cent of clothing waste is collected for reuse and recycling, while the majority ends up in landfill or is incinerated.",
+      "Once you’ve decluttered your wardrobe and have made the necessary drop-offs to your local charity shops or recycling points, so begins the complex journey of your unwanted clothes.",
+      "Around 20 per cent of these reusable clothes are sold domestically, while the remainder is sold to textile merchants who sort and ship them to countries such as Uganda, Kenya, Hungary, India, Bangladesh, Ghana, and Pakistan. Once they’ve reached overseas, only 70 per cent of this clothing is actually reused, while the rest is recycled into lower-value products—such as insulation material or cleaning cloths—or sent to landfill or incineration.",
+      "However, importers of second-hand clothing are becoming overwhelmed by the sheer volume of garments being sent to them… 40 per cent of what the country receives goes straight into landfill.",
+      "Garments are sorted by fibre and colour for recycling, but clothing made from blended fibres such as polycotton (a mixture of cotton and polyester) presents another major challenge. Along with dyed fabrics and other contaminants, the different materials in these garments cannot be separated so the majority of this textile waste goes to landfill or incinerators.",
+      "Mixtures [of different fibres] are problematic for [current] recycling processes. A polyester-cotton blend is a blend on the yarn level and extremely hard to separate. Luckily, various chemical recycling techniques are being developed to cope with blended textiles.",
+      "When we dispose our clothes, they either end up in landfills or are sold again. However, now there are many recycling mills where second-hand clothing and fabrics from all over the world are segregated, torn apart to remove buttons, zippers and labels, and then treated to be re-purposed and used as yarn.",
+      "This yarn is used to create inexpensive blankets and carpets that are sold at rock-bottom prices.",
+    ],
   },
   blog3: {
     path: "blog3",
@@ -80,6 +90,18 @@ export const blogs: iBlogs = {
       position:
         "Secretary General at European Technology Platform for the Future of Textiles and Clothing",
     },
-    content: [],
+    content: [
+      "Today I’m returning to the topic of textile circularity. After having looked into total textile waste volumes and types of textile waste in previous think pieces, today’s article sheds some light on the fibre-to-fibre recycling challenges.",
+      "Recycling comes to everybody’s mind first when thinking about circularity. And we know it is possible across many material sectors from paper to glass to metals, so why not for textiles too? The answer in a way is the same as to the question of why we make books, glass bottles or aluminium cans fully automatically, but not clothing. It is just much more complex.",
+      "I will dig into these complexities and discuss:",
+      "- differences between open-loop and closed loop circularity",
+      "- potential and limitations of mechanical and chemical textile recycling",
+      "- feedstock needs and availability",
+      "- recycling scales for some common textile fibres",
+      "- pre-conditions for making fibre-to-fibre recycling viable",
+      "- regulatory drivers and inhibitors for textile recycling",
+      "I conclude by stating that fibre-to-fibre recycling only makes sense if integrated into a complete textile and clothing manufacturing value chain operating at regional scale and able to produce on demand, which as far as Europe is concerned is much farther away than 2030.",
+      "As usual all comments, constructive criticism and links to useful further reading material on the subject are highly welcome.",
+    ],
   },
 };

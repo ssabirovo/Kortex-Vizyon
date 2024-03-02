@@ -137,7 +137,7 @@
   }
   .body {
     color: var(--white);
-    font-size: 30px;
+    font-size: 20px;
     text-align: end;
     @include d-flex($a-i: flex-end, $f-d: column, $g: 20px);
   }

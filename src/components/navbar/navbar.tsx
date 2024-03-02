@@ -1,21 +1,24 @@
 import { useState } from "react";
 import cx from "classnames";
 import Icon from "../../assets/icons/icon";
-import { Langs } from "./inside";
+import { Langs, links } from "./inside";
 import cls from "./navbar.module.scss";
 import useHandleNavigate from "../../services/navigate";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { changeLanguage } from "i18next";
 
 function Navbar() {
   const [closed, setClosed] = useState(true);
   const [activeLang, setActiveLang] = useState("EN");
+  const handleNavigate = useHandleNavigate();
+  const { t } = useTranslation();
 
   const changeLang = (lang: string) => {
+    changeLanguage(lang);
     setActiveLang(lang);
   };
   const navigate = useNavigate();
-  
-  const handleNavigate = useHandleNavigate();
 
   return (
     <>
@@ -34,27 +37,15 @@ function Navbar() {
           />
         </div>
         <div className={cls.center}>
-          <p
-            onClick={() => {
-              handleNavigate("/", "#main");
-            }}
-          >
-            Asosiy
-          </p>
-          <p
-            onClick={() => {
-              handleNavigate("/", "#products");
-            }}
-          >
-            Maxsulotlar
-          </p>
-          <p
-            onClick={() => {
-              handleNavigate("/", "#contact");
-            }}
-          >
-            Bog'lanish
-          </p>
+          {links.map(({ address, content, page }) => (
+            <p
+              onClick={() => {
+                handleNavigate(page, address);
+              }}
+            >
+              {t(content)}
+            </p>
+          ))}
         </div>
         <div className={cls.right}>
           <div className={cls.dropDown}>
@@ -87,9 +78,9 @@ function Navbar() {
             <Icon name="xMark" />
           </div>
           <div className={cls.body}>
-            <p onClick={() => handleNavigate("/", "#main")}>Asosiy</p>
-            <p onClick={() => handleNavigate("/", "#products")}>Maxsulotlar</p>
-            <p onClick={() => handleNavigate("/", "#contact")}>Bog'lanish</p>
+            {links.map(({ address, content, page }) => (
+              <p onClick={() => handleNavigate(page, address)}>{t(content)}</p>
+            ))}
           </div>
           <div className={cls.footer}>
             <div className={cls.x}>
