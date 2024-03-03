@@ -9,7 +9,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    backend: { loadPath: "/common/{{lng}}.json" },
+    backend: { loadPath: "/locales/{{lng}}.json" },
     fallbackLng: "uz",
     detection: {
       order: ["localStorage", "htmlTag", "path", "subdomain"],
