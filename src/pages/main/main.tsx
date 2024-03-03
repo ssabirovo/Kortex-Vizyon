@@ -2,9 +2,11 @@ import { useNavigate } from "react-router-dom";
 import Product from "./components/product/product";
 import { whyCards } from "./why-inside";
 import { blogs } from "../blog/inside";
-import cl from "./main.module.scss";
 import useHandleNavigate from "../../services/navigate";
 import { useTranslation } from "react-i18next";
+import ecoLogo  from "/src/assets/images/eco-logo.svg"
+import video from "/src/assets/videos/heros_video_process.mp4";
+import cl from "./main.module.scss";
 
 export type sex = keyof typeof blogs;
 
@@ -32,7 +34,7 @@ function Main() {
         <div className={cl.right}>
           <img
             className={cl.center}
-            src="/src/assets/images/eco-logo.svg"
+            src={ecoLogo}
             alt=""
           />
           <div className={cl.shirt}></div>
@@ -60,7 +62,7 @@ function Main() {
       </section>
       <div id="how" className={cl.how}>
         <video autoPlay muted loop>
-          <source src="/src/assets/videos/heros_video_process.mp4" />
+          <source src={video} />
         </video>
         <section className={cl.container}>
           <div className={cl.content}>

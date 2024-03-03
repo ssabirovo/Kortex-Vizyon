@@ -1,17 +1,19 @@
 import { useState } from "react";
 import { colorObj, colors } from "./inside";
 import cx from "classnames";
-import cl from "./product.module.scss";
 import Icon from "../../../../assets/icons/icon";
 import { useTranslation } from "react-i18next";
+import white from "/src/assets/images/white.png";
+import fabricWhite from "/src/assets/images/fabric-white.png";
+import cl from "./product.module.scss";
 
 function Product() {
   const [activeColor, setActiveColor] = useState<colorObj>({
     name: "White",
     code: "d 100-1223(1)",
     hexCode: "#EDE8E1",
-    cottonUrl: "/src/assets/images/white.png",
-    fabricUrl: "/src/assets/images/fabric-white.png",
+    cottonUrl: white,
+    fabricUrl: fabricWhite,
   });
   const [isFabric, setIsBabric] = useState(false);
   const { t } = useTranslation();

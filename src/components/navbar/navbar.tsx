@@ -6,7 +6,8 @@ import useHandleNavigate from "../../services/navigate";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
-import logo1 from "../../../src/assets/images/logo1.svg"
+import logo1 from "../../../src/assets/images/logo1.svg";
+import logo2 from "../../../src/assets/images/logo2.svg";
 import cls from "./navbar.module.scss";
 
 function Navbar() {
@@ -31,8 +32,7 @@ function Navbar() {
           <img
             onClick={() => navigate("/")}
             className={cls.logo2}
-            src="../../../src/assets/images/logo2.svg"
-            alt=""
+            src={logo2}
           />
         </div>
         <div className={cls.center}>

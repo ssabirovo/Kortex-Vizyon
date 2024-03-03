@@ -1,3 +1,8 @@
+import step1 from "/src/assets/images/step1.png";
+import step2 from "/src/assets/images/step2.png";
+import step3 from "/src/assets/images/step3.png";
+import step4 from "/src/assets/images/step4.png";
+
 interface iStep {
   step: string;
   title: string;
@@ -10,24 +15,24 @@ export const steps: iStep[] = [
     step: "process.step1.step",
     title: "process.step1.title",
     description: "process.step1.description",
-    img: "/src/assets/images/step1.png",
+    img: step1,
   },
   {
     step: "process.step2.step",
     title: "process.step2.title",
     description: "process.step2.description",
-    img: "/src/assets/images/step2.png",
+    img: step2,
   },
   {
     step: "process.step3.step",
     title: "process.step3.title",
     description: "process.step3.description",
-    img: "/src/assets/images/step3.png",
+    img: step3,
   },
   {
     step: "process.step4.step",
     title: "process.step4.title",
     description: "process.step4.description",
-    img: "/src/assets/images/step4.png",
+    img: step4,
   },
 ];

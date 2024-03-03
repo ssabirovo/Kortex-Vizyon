@@ -1,7 +1,8 @@
-import c from "./index.module.scss";
 import cx from "classnames";
 import { steps } from "./inside";
 import { useTranslation } from "react-i18next";
+import video from "/src/assets/videos/heros_video_process.mp4";
+import c from "./index.module.scss";
 
 function Process() {
   const { t } = useTranslation();
@@ -9,12 +10,7 @@ function Process() {
   return (
     <>
       <div className={c.video}>
-        <video
-          autoPlay
-          muted
-          loop
-          src="/src/assets/videos/heros_video_process.mp4"
-        ></video>
+        <video autoPlay muted loop src={video}></video>
       </div>
 
       <section className={c.process}>

@@ -1,8 +1,9 @@
 import Icons from "../../assets/icons";
-import cl from "./footer.module.scss";
 import { mediaLinks } from "./inside";
 import useHandleNavigate from "../../services/navigate";
 import { useTranslation } from "react-i18next";
+import footeLogo from "/src/assets/images/foote-logo.svg";
+import cl from "./footer.module.scss";
 
 function Footer() {
   const handleNavigate = useHandleNavigate();
@@ -40,14 +41,20 @@ function Footer() {
       ></iframe>
       <section className={cl.footer}>
         <div className={cl.top}>
-          <img src="/src/assets/images/foote-logo.svg" alt="" />
+          <img src={footeLogo} alt="" />
           <div>
             <a onClick={() => handleNavigate("/", "#why")}>
               Why recycled cotton ?
             </a>
-            <a onClick={() => handleNavigate("/", "#how")}>{t("main.why.title")}</a>
-            <a onClick={() => handleNavigate("/", "#blogs")}>{t("main.why.title")}</a>
-            <a onClick={() => handleNavigate("/", "#contact")}>{t("footer.contacts")}</a>
+            <a onClick={() => handleNavigate("/", "#how")}>
+              {t("main.why.title")}
+            </a>
+            <a onClick={() => handleNavigate("/", "#blogs")}>
+              {t("main.how.title")}
+            </a>
+            <a onClick={() => handleNavigate("/", "#contact")}>
+              {t("footer.contacts")}
+            </a>
           </div>
         </div>
         <div className={cl.top}>
