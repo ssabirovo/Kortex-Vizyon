@@ -72,6 +72,7 @@ function Main() {
                 window.scrollTo(0, 0);
               }}
             >
+              
               {t("main.how.btn")}
             </button>
           </div>
