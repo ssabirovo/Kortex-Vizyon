@@ -2,11 +2,12 @@ import { useState } from "react";
 import cx from "classnames";
 import Icon from "../../assets/icons/icon";
 import { Langs, links } from "./inside";
-import cls from "./navbar.module.scss";
 import useHandleNavigate from "../../services/navigate";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "i18next";
+import logo1 from "../../../src/assets/images/logo1.svg"
+import cls from "./navbar.module.scss";
 
 function Navbar() {
   const [closed, setClosed] = useState(true);
@@ -26,11 +27,7 @@ function Navbar() {
     <>
       <section className={cls.navbar}>
         <div className={cls.left}>
-          <img
-            onClick={() => navigate("/")}
-            src="../../../src/assets/images/logo1.svg"
-            alt=""
-          />
+          <img onClick={() => navigate("/")} src={logo1} alt="" />
           <img
             onClick={() => navigate("/")}
             className={cls.logo2}
