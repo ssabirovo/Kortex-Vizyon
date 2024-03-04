@@ -15,8 +15,6 @@ i18n
       order: ["localStorage", "htmlTag", "path", "subdomain"],
       caches: ["localStorage"],
     },
-
-    defaultNS: "TR",
     debug: true,
     interpolation: {
       escapeValue: false,
