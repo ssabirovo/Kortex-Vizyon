@@ -13,7 +13,7 @@ import cls from "./navbar.module.scss";
 function Navbar() {
   const [closed, setClosed] = useState(true);
   const [activeLang, setActiveLang] = useState(
-    localStorage.getItem("i18nextLng") || "EN"
+    localStorage.getItem("i18nextLng") || "en"
   );
   const handleNavigate = useHandleNavigate();
   const { t } = useTranslation();
@@ -82,7 +82,8 @@ function Navbar() {
                 {t(content)}
               </p>
             ))}
-          </div>''
+          </div>
+          ''
           <div className={cls.footer}>
             <a href="tel:+998994624558" className={cls.x}>
               <Icon name="Phone" />
