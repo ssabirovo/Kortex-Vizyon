@@ -38,6 +38,10 @@
       "title": "Qanday qilib yaratiladi?",
       "description": "Mahsulotimizni noldan yaratish jarayoni qanday?",
       "btn": "Batafsil"
+    },
+    "blogs": {
+      "title": "Bloglar",
+      "description": "Biz qayta ishlangan paxta, moda sohasida bilim va barqaror amaliyotni rivojlantirish bo'yicha ekspert fikrlari va postlarini baham ko'ramiz."
     }
   },
   "process": {

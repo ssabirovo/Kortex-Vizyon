@@ -85,15 +85,18 @@ function Navbar() {
             ))}
           </div>
           <div className={cls.footer}>
-            <div className={cls.x}>
+            <a href="tel:+998994624558" className={cls.x}>
               <Icon name="Phone" />
-            </div>
-            <div className={cls.x}>
+            </a>
+            <a href="kortexvizyon@mail.ru" className={cls.x}>
               <Icon name="Mail" />
-            </div>
-            <div className={cls.x}>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B998905070707&text&type=phone_number&app_absent=0"
+              className={cls.x}
+            >
               <Icon name="WhatsApp" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

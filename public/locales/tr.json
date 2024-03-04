@@ -39,6 +39,10 @@
       "title": "Nasıl Yapılır?",
       "description": "Ürünümüzün sıfırdan nasıl oluşturulduğuna dair süreç nedir?",
       "btn": "Daha fazla"
+    },
+    "blogs": {
+      "title": "Bloglar",
+      "description": "Moda alanında bilgiyi ve sürdürülebilir uygulamaları teşvik etmek için geri dönüştürülmüş pamukla ilgili uzman görüşlerini ve gönderilerini paylaşıyoruz."
     }
   },
   "process": {

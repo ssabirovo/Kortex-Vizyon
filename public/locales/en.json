@@ -38,6 +38,10 @@
       "title": "How it’s made ?",
       "description": "What is the process involved in creating our product from scratch ?",
       "btn": "See more"
+    },
+    "blogs": {
+      "title": "Blogs",
+      "description": "We share expert opinions and posts on recycled cotton, fostering knowledge and sustainable practices within fashion. "
     }
   },
   "process": {

@@ -4,7 +4,7 @@ import { whyCards } from "./why-inside";
 import { blogs } from "../blog/inside";
 import useHandleNavigate from "../../services/navigate";
 import { useTranslation } from "react-i18next";
-import ecoLogo  from "/src/assets/images/eco-logo.svg"
+import ecoLogo from "/src/assets/images/eco-logo.svg";
 import video from "/src/assets/videos/heros_video_process.mp4";
 import cl from "./main.module.scss";
 
@@ -32,11 +32,7 @@ function Main() {
           </a>
         </div>
         <div className={cl.right}>
-          <img
-            className={cl.center}
-            src={ecoLogo}
-            alt=""
-          />
+          <img className={cl.center} src={ecoLogo} alt="" />
           <div className={cl.shirt}></div>
           <div className={cl.cotton}></div>
           <div className={cl.yarn}></div>
@@ -74,7 +70,6 @@ function Main() {
                 window.scrollTo(0, 0);
               }}
             >
-              
               {t("main.how.btn")}
             </button>
           </div>
@@ -83,12 +78,9 @@ function Main() {
       <section id="blogs" className={cl.blogs}>
         <div className={cl.head}>
           <div className={cl.left}>
-            <h1>Blogs</h1>
+            <h1>{t("main.blogs.title")}</h1>
             <div></div>
-            <p>
-              We share expert opinions and posts on recycled cotton, fostering
-              knowledge and sustainable practices within fashion.
-            </p>
+            <p>{t("main.blogs.description")}</p>
           </div>
           {/* <button>View all</button> */}
         </div>
@@ -116,7 +108,9 @@ function Main() {
                   />
                   <div>
                     <p className={cl.name}>{blogs[name].author.name}</p>
-                    <p className={cl.position}>{t(blogs[name].author.position)}</p>
+                    <p className={cl.position}>
+                      {t(blogs[name].author.position)}
+                    </p>
                   </div>
                 </div>
               </div>
