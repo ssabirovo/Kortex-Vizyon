@@ -1,4 +1,4 @@
-export const Langs = ["en", "uz", "ru", "tr"];
+export const Langs = ["EN", "UZ", "RU", "TR"];
 
 interface linksProps {
   address: string;
