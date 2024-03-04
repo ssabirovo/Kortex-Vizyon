@@ -12,10 +12,10 @@
     },
     "product": {
       "title": "Bizning mahsulot",
-      "description": "Bizning mahsulotimizni har xil rang va shaklda ko'ring",
-      "name": "Rangi ko'p qayta ishlangan paxta",
+      "description": "Bizning mahsulotimizni har xil rang va shaklda ko'rishingiz mumkin",
+      "name": "Rangli qayta ishlangan paxta",
       "statusCotton": "Paxta shaklida",
-      "statusFabric": "To'qima shaklida",
+      "statusFabric": "Mato shaklida",
       "order": "Buyurtma"
     },
     "why": {
