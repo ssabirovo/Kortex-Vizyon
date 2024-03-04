@@ -22,7 +22,11 @@ function Footer() {
             {links.map(({ icon, description, link }, i) => (
               <div key={i} className={cl.link}>
                 <Icons name={icon} className={cl.icon} />
-                <a href={link}>{description}</a>
+                <a href={link}>
+                  {description == "footer.address"
+                    ? t(description)
+                    : description}
+                </a>
               </div>
             ))}
           </div>
@@ -44,13 +48,13 @@ function Footer() {
           <img src={footeLogo} alt="" />
           <div>
             <a onClick={() => handleNavigate("/", "#why")}>
-            {t("main.why.title")}
+              {t("main.why.title")}
             </a>
             <a onClick={() => handleNavigate("/", "#how")}>
-            {t("main.how.title")}
+              {t("main.how.title")}
             </a>
             <a onClick={() => handleNavigate("/", "#blogs")}>
-            {t("main.blogs.title")}
+              {t("main.blogs.title")}
             </a>
             <a onClick={() => handleNavigate("/", "#contact")}>
               {t("footer.contacts")}
