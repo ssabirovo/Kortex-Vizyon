@@ -4,33 +4,14 @@ import { initReactI18next } from "react-i18next";
 import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import translationEN from "../../../public/locales/EN.json";
-import translationUz from "../../../public/locales/UZ.json";
-import translationTR from "../../../public/locales/TR.json";
-import translationRU from "../../../public/locales/RU.json";
-
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     backend: { loadPath: "/locales/{{lng}}.json" },
-    lng: "en",
-    fallbackLng: "en",
-    resources: {
-      en: {
-        translation: translationEN,
-      },
-      uz: {
-        translation: translationUz,
-      },
-      tr: {
-        translation: translationTR,
-      },
-      ru: {
-        translation: translationRU,
-      },
-    },
+    lng: "EN",
+    fallbackLng: "EN",
     detection: {
       order: ["localStorage", "htmlTag", "path", "subdomain"],
       caches: ["localStorage"],
