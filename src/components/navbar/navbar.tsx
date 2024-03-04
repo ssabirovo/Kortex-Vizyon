@@ -13,7 +13,7 @@ import cls from "./navbar.module.scss";
 function Navbar() {
   const [closed, setClosed] = useState(true);
   const [activeLang, setActiveLang] = useState(
-    localStorage.getItem("i18nextLng")
+    localStorage.getItem("i18nextLng") || "EN"
   );
   const handleNavigate = useHandleNavigate();
   const { t } = useTranslation();
@@ -59,7 +59,6 @@ function Navbar() {
                 (lang) =>
                   lang !== activeLang && (
                     <p key={lang} onClick={() => changeLang(lang)}>
-                      {" "}
                       {lang}
                     </p>
                   )

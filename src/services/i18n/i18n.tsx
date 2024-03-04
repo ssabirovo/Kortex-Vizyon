@@ -10,11 +10,13 @@ i18n
   .use(initReactI18next)
   .init({
     backend: { loadPath: "/locales/{{lng}}.json" },
-    fallbackLng: "uz",
+    fallbackLng: "TR",
     detection: {
       order: ["localStorage", "htmlTag", "path", "subdomain"],
       caches: ["localStorage"],
     },
+
+    defaultNS: "TR",
     debug: true,
     interpolation: {
       escapeValue: false,

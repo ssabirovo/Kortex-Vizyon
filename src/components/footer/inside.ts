@@ -28,12 +28,12 @@ export const mediaLinks: ImediaLinks[] = [
       {
         icon: "linkedIn",
         description: "@kortexvizyon",
-        link: "https://www.linkedin.com/in/so1ov/",
+        link: "https://www.linkedin.com/company/kortex-vizyon/",
       },
       {
         icon: "Facebook",
         description: "@kortexvizyon",
-        link: "https://www.linkedin.com/in/so1ov/",
+        link: "https://www.facebook.com/profile.php?id=61557007590339",
       },
     ],
   },
