@@ -3,8 +3,8 @@ import { colorObj, colors } from "./inside";
 import cx from "classnames";
 import Icon from "../../../../assets/icons/icon";
 import { useTranslation } from "react-i18next";
-import white from "/src/assets/images/white.png";
-import fabricWhite from "/src/assets/images/fabric-white.png";
+import white from "/src/assets/images/white.webp";
+import fabricWhite from "/src/assets/images/fabric-white.webp";
 import cl from "./product.module.scss";
 
 function Product() {
@@ -65,7 +65,7 @@ function Product() {
                     });
                   }}
                   className={cx(
-                    activeColor.hexCode == hexCode && cl.activeColor
+                    activeColor.hexCode == hexCode && cl.activeColor,
                   )}
                   style={{ backgroundColor: hexCode }}
                 ></div>

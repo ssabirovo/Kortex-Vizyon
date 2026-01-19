@@ -1,7 +1,7 @@
-import step1 from "/src/assets/images/step1.png";
-import step2 from "/src/assets/images/step2.png";
-import step3 from "/src/assets/images/step3.png";
-import step4 from "/src/assets/images/step4.png";
+import step1 from "/src/assets/images/step1.webp";
+import step2 from "/src/assets/images/step2.webp";
+import step3 from "/src/assets/images/step3.webp";
+import step4 from "/src/assets/images/step4.webp";
 
 interface iStep {
   step: string;
